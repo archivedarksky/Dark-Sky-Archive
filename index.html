@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dark Sky Archive</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0a0a;
+      color: #eee;
+    }
+    header {
+      background-color: #050505;
+      padding: 20px 30px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header img {
+      width: 140px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 15px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      letter-spacing: 5px;
+      color: #22d1ee;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: none; /* Hidden because logo has text */
+    }
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+    .news-item {
+      background: #121212;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      box-shadow: 0 0 15px rgba(34, 209, 238, 0.4);
+      transition: transform 0.2s ease;
+    }
+    .news-item:hover {
+      transform: translateY(-5px);
+    }
+    .news-image {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      height: 300px;
+    }
+    .news-content {
+      padding: 20px 25px;
+    }
+    .news-title {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #22d1ee;
+      font-weight: 700;
+    }
+    .news-date {
+      color: #777;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+    .news-description {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      color: #444;
+      font-size: 0.9rem;
+      border-top: 1px solid #222;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      .news-image {
+        height: 200px;
+      }
+      header img {
+        width: 120px;
+      }
+      header h1 {
+        font-size: 1.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/htPHkgw.jpg" alt="Dark Sky Archive Logo" />
+    <h1>Dark Sky Archive</h1>
+  </header>
+
+  <main>
+    <!-- News Item 1 -->
+    <article class="news-item">
+      <img
+        src="https://www.nasa.gov/sites/default/files/thumbnails/image/potw2046a.jpg"
+        alt="James Webb Space Telescope"
+        class="news-image"
+      />
+      <div class="news-content">
+        <h2 class="news-title">James Webb Space Telescope Delivers First Images</h2>
+        <p class="news-date">Published: July 12, 2022</p>
+        <p class="news-description">
+          NASA’s James Webb Space Telescope has successfully released its first full-color images, offering unprecedented views of the universe. The images reveal the birth of stars, distant galaxies, and the composition of exoplanet atmospheres.
+        </p>
+      </div>
+    </article>
+
+    <!-- News Item 2 -->
+    <article class="news-item">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/4/4e/SpaceX_Crew-5_Capsule.JPG"
+        alt="SpaceX Crew-5 Mission"
+        class="news-image"
+      />
+      <div class="news-content">
+        <h2 class="news-title">SpaceX Crew-5 Mission Launches to ISS</h2>
+        <p class="news-date">Published: October 5, 2023</p>
+        <p class="news-description">
+          SpaceX successfully launched its Crew-5 mission carrying astronauts to the International Space Station. This marks continued collaboration between NASA and private companies to advance human space exploration.
+        </p>
+      </div>
+    </article>
+
+    <!-- News Item 3 -->
+    <article class="news-item">
+      <img
+        src="https://solarsystem.nasa.gov/system/news_items/main_images/9066_Psyche.jpg"
+        alt="Psyche Asteroid Mission"
+        class="news-image"
+      />
+      <div class="news-content">
+        <h2 class="news-title">NASA Psyche Mission Heads to Metal-rich Asteroid</h2>
+        <p class="news-date">Published: August 21, 2023</p>
+        <p class="news-description">
+          NASA’s Psyche spacecraft embarks on a journey to explore the metallic asteroid 16 Psyche. The mission aims to unlock mysteries about planetary cores and the building blocks of planet formation.
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2024 Dark Sky Archive. All rights reserved.
+  </footer>
+</body>
+</html>
